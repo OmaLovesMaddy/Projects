@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Japan Travels | Madison Cherry, 2024</title>
+<style type="text/css">
+body {
+    margin: 0;
+    background-image: url("sakura_background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #180F1D;
+}
+wrapper {
+    width: 1200px;
+    margin: auto;
+    display: block;
+    background-color: rgba(0,0,0,0.50);
+}
+header {
+	height: 100px;
+	background-color: rgba(0,0,0,0.75);
+	
+	
+	
+}
+footer{
+    width: 100%;
+    background-color: rgba(0,0,0,0.50);
+    position: fixed;
+    color: white;
+    bottom: 0px;
+    height: 100px;
+    text-align: center;
+	
+	
+}
+footer p {
+    margin-top: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    padding: 0 50px;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace"
+}
+#Tabs1 ul li img {
+    width: auto;
+    margin: 8px;
+    height: 50px;
+}
+#Tabs1 ul li {
+    padding: 8px;
+    text-align: center;
+}
+#Tabs1 ul {
+    background-color: transparent;
+    border: none;
+    background-image: none;
+}
+#Tabs1 {
+    background-color: transparent;
+    border: none;
+    background-image: none;
+}
+#tabs-1, #tabs-2, #tabs-3, #tabs-4, #tabs-5 {
+    background-color: rgba(234,229,242,1.00);
+}
+input, select {
+    width: 98%;
+    border-radius: 15px;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    border: medium solid rgba(136,132,175,1.00);
+    box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 8px 0px;
+    box-sizing: border-box;
+}
+.date, select , .submit{
+    width: 48.5%;
+    margin-right: 8px;
+}
+.submit {
+    background-color: rgba(164,161,196,1.00);
+    color: rgba(255,255,255,1.00);
+    font-weight: bold;
+}
+h1{
+    color: white;
+    padding: 30px;
+    margin: 0px;
+    text-align: center;  
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	font-size: 40px
+	
+}
+#Tabs1  ul li a {
+    color: rgba(147,143,185,1.00);
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace"
+}
+
+</style>
+<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.tabs.min.css" rel="stylesheet" type="text/css">
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.tabs.min.js"></script>
+</head>
+	<body>
+<header><h1>JAPAN TRAVELS</h1></header>
+<wrapper>
+  <div id="Tabs1">
+	  <ul>
+	    <li> <a href="#tabs-1"><img src="flight_icon.png" alt="" width="550" height="354"><br>
+        Flights</a></li>
+	    <li> <a href="#tabs-2"><img src="car_icon.png" alt="" width="540" height="450"><br>
+        Cars</a></li>
+        <li> <a href="#tabs-3"><img src="train_icon.png" alt="" width="394" height="512"><br>
+        Trains</a></li>
+        <li> <a href="#tabs-4"><img src="hotel_icon.png" alt="" width="544" height="394"><br>
+        Hotels</a></li>
+        <li> <a href="#tabs-5"><img src="events_icon.png" alt="" width="526" height="460"><br>
+        Events</a></li>
+    </ul>
+	  <div id="tabs-1">
+	    <input type="text" placeholder="Where to?">
+		<input type="date" class="date">
+		<input type="date" class="date">
+		<select>
+		  <option value="0">Number of Travelers</option>
+		  <option value="1">1</option>
+		  <option value="2">2</option>
+		  <option value="3">3</option>
+		  <option value="4">4</option>
+		  <option value="5+">5+</option>
+		</select><input type="submit" class="submit" value="Submit">
+    </div>
+	  <div id="tabs-2">
+	   <input type="text" placeholder="Pick up location">
+		<input type="date" class="date">
+		<input type="date" class="date">
+		<input type="submit" class="submit" value="Submit">
+    </div>
+      <div id="tabs-3">
+        <input type="text" placeholder="Where to?">
+		<input type="date" class="date">
+		<input type="date" class="date">
+		<select>
+		  <option value="0">Number of Travelers</option>
+		  <option value="1">1</option>
+		  <option value="2">2</option>
+		  <option value="3">3</option>
+		  <option value="4">4</option>
+		  <option value="5+">5+</option>
+		</select><input type="submit" class="submit" value="Submit">
+      </div>
+      <div id="tabs-4">
+       <input type="text" placeholder="Hotel name">
+		<input type="date" class="date">
+		<input type="date" class="date">
+		  <select>
+		  <option value="0">Number of Guest</option>
+		  <option value="1">1</option>
+		  <option value="2">2</option>
+		  <option value="3">3</option>
+		  <option value="4">4</option>
+		  <option value="5+">5+</option>
+		</select>
+		<input type="submit" class="submit" value="Submit">
+      </div>
+      <div id="tabs-5">
+        <input type="text" placeholder="City">
+		<input type="date" class="date">
+		<input type="date" class="date">
+		<input type="submit" class="submit" value="Submit">
+      </div>
+  </div>
+</wrapper>
+<footer><p>© 2024, Madison Cherry. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p></footer>
+<script type="text/javascript">
+$(function() {
+	$( "#Tabs1" ).tabs(); 
+});
+$(function() {
+	$( "#Tabs1" ).tabs(); 
+});
+</script>
+</body>
+</html>
